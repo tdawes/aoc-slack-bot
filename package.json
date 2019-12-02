@@ -1,0 +1,20 @@
+{
+  "name": "aoc-sync",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "functions"
+  ],
+  "private": true,
+  "devDependencies": {
+    "@firebase/app-types": "^0.4.8",
+    "firebase-tools": "^7.8.1",
+    "prettier": "^1.19.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.7.2",
+    "wsrun": "^5.1.0"
+  }
+}

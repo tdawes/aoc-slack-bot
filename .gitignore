@@ -1,0 +1,4 @@
+node_modules/
+functions/build/
+.runtimeconfig.json
+.envrc.local

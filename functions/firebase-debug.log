@@ -1,0 +1,353 @@
+[debug] [2019-12-02T15:02:37.768Z] ----------------------------------------------------------------------
+[debug] [2019-12-02T15:02:37.771Z] Command:       /Users/tdawes/.nvm/versions/node/v8.16.2/bin/node /Users/tdawes/prodo/git/aoc-sync/node_modules/.bin/firebase functions:shell
+[debug] [2019-12-02T15:02:37.772Z] CLI Version:   7.8.1
+[debug] [2019-12-02T15:02:37.772Z] Platform:      darwin
+[debug] [2019-12-02T15:02:37.772Z] Node Version:  v8.16.2
+[debug] [2019-12-02T15:02:37.772Z] Time:          Mon Dec 02 2019 15:02:37 GMT+0000 (GMT)
+[debug] [2019-12-02T15:02:37.772Z] ----------------------------------------------------------------------
+[debug] [2019-12-02T15:02:37.772Z] 
+[debug] [2019-12-02T15:02:37.790Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-02T15:02:37.791Z] > authorizing via signed-in user
+[debug] [2019-12-02T15:02:37.791Z] [iam] checking project advent-of-code-slack for permissions ["firebase.projects.get"]
+[debug] [2019-12-02T15:02:37.796Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/advent-of-code-slack:testIamPermissions  
+
+[debug] [2019-12-02T15:02:38.058Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-02T15:02:38.073Z] [functions] Using node@8 from host.
+[info] ✔  functions: Emulator started at http://localhost:5000
+[debug] [2019-12-02T15:02:38.341Z] [functions] Watching "/Users/tdawes/prodo/git/aoc-sync/functions" for Cloud Functions...
+[debug] [2019-12-02T15:02:38.357Z] DEBUG: [worker-~diagnostic~-77535642-3854-489c-a334-05f281105d9d]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_14256.sock
+[debug] [2019-12-02T15:02:38.357Z] DEBUG: [worker-~diagnostic~-77535642-3854-489c-a334-05f281105d9d]: BUSY
+[debug] [2019-12-02T15:02:38.780Z] DEBUG: [runtime-status] [14256] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:02:38.783Z] DEBUG: [runtime-status] [14256] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:02:38.787Z] DEBUG: [runtime-status] [14256] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:02:38.790Z] DEBUG: [runtime-status] [14256] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:02:38.791Z] DEBUG: [runtime-status] [14256] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:02:39.109Z] [functions[pollAOC]] function ignored because the pubsub emulator does not exist or is not running.
+[debug] [2019-12-02T15:02:39.109Z] [functions[updateSlack]] function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions: Loaded functions: pollAOC, updateSlack
+[debug] [2019-12-02T15:02:39.138Z] DEBUG: [worker-~diagnostic~-77535642-3854-489c-a334-05f281105d9d]: exited
+[debug] [2019-12-02T15:02:39.138Z] DEBUG: [worker-~diagnostic~-77535642-3854-489c-a334-05f281105d9d]: FINISHED
+[debug] [2019-12-02T15:02:39.570Z] shell:pollAOC: trigger={"schedule":{"schedule":"every 1 minute"},"eventTrigger":{"resource":"projects/advent-of-code-slack/topics","eventType":"google.pubsub.topic.publish","service":"pubsub.googleapis.com"},"labels":{"deployment-scheduled":"true"},"name":"pollAOC","entryPoint":"pollAOC"}
+[debug] [2019-12-02T15:02:39.570Z] shell:pollAOC: opts={}, data={}
+[debug] [2019-12-02T15:02:39.576Z] DEBUG: [worker-pollAOC-2ff8398c-706e-4c38-9e85-dd4b10987f8d]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_14257.sock
+[debug] [2019-12-02T15:02:39.576Z] DEBUG: [worker-pollAOC-2ff8398c-706e-4c38-9e85-dd4b10987f8d]: BUSY
+[debug] [2019-12-02T15:02:40.032Z] DEBUG: [runtime-status] [14257] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:02:40.037Z] DEBUG: [runtime-status] [14257] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:02:40.039Z] DEBUG: [runtime-status] [14257] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:02:40.040Z] DEBUG: [runtime-status] [14257] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:02:40.042Z] DEBUG: [runtime-status] [14257] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:02:40.357Z] DEBUG: [runtime-status] [14257] Trigger "pollAOC" has been found, beginning invocation!
+[debug] [2019-12-02T15:02:40.357Z] [functions] Beginning execution of "pollAOC"
+[debug] [2019-12-02T15:02:40.358Z] DEBUG: [runtime-status] [14257] triggerDefinition {"schedule":{"schedule":"every 1 minute"},"eventTrigger":{"resource":"projects/advent-of-code-slack/topics","eventType":"google.pubsub.topic.publish","service":"pubsub.googleapis.com"},"labels":{"deployment-scheduled":"true"},"name":"pollAOC","entryPoint":"pollAOC"}
+[debug] [2019-12-02T15:02:40.358Z] DEBUG: [runtime-status] [14257] Running pollAOC in mode BACKGROUND
+[debug] [2019-12-02T15:02:40.359Z] DEBUG: [runtime-status] [14257] ProcessBackground {"eventId":"721cd5c8-d949-46bb-86e4-cbdad45054c6","timestamp":"2019-12-02T15:02:39.570Z","eventType":"google.pubsub.topic.publish","data":{}}
+[debug] [2019-12-02T15:02:40.360Z] DEBUG: [runtime-status] [14257] RunBackground {"data":{},"context":{"eventId":"721cd5c8-d949-46bb-86e4-cbdad45054c6","timestamp":"2019-12-02T15:02:39.570Z","eventType":"google.pubsub.topic.publish"}}
+[debug] [2019-12-02T15:02:44.741Z] DEBUG: [runtime-status] [14257] Ephemeral server survived.
+[debug] [2019-12-02T15:02:44.741Z] [functions] Finished "pollAOC" in ~4s
+[debug] [2019-12-02T15:02:44.741Z] DEBUG: [worker-pollAOC-2ff8398c-706e-4c38-9e85-dd4b10987f8d]: IDLE
+[debug] [2019-12-02T15:03:45.146Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:03:45.242Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js.map changed, reloading triggers
+[debug] [2019-12-02T15:03:45.243Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js changed, reloading triggers
+[debug] [2019-12-02T15:03:46.246Z] DEBUG: [worker-pool]: Shutting down IDLE worker (pollAOC)
+[debug] [2019-12-02T15:03:46.255Z] DEBUG: [worker-~diagnostic~-a0fd280d-a75c-4e98-8e19-e822fb6cb373]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_14268.sock
+[debug] [2019-12-02T15:03:46.255Z] DEBUG: [worker-~diagnostic~-a0fd280d-a75c-4e98-8e19-e822fb6cb373]: BUSY
+[debug] [2019-12-02T15:03:46.257Z] DEBUG: [worker-pollAOC-2ff8398c-706e-4c38-9e85-dd4b10987f8d]: exited
+[debug] [2019-12-02T15:03:46.257Z] DEBUG: [worker-pollAOC-2ff8398c-706e-4c38-9e85-dd4b10987f8d]: FINISHED
+[debug] [2019-12-02T15:03:46.835Z] DEBUG: [runtime-status] [14268] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:03:46.840Z] DEBUG: [runtime-status] [14268] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:03:46.843Z] DEBUG: [runtime-status] [14268] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:03:46.845Z] DEBUG: [runtime-status] [14268] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:03:46.848Z] DEBUG: [runtime-status] [14268] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:03:47.276Z] DEBUG: [worker-~diagnostic~-a0fd280d-a75c-4e98-8e19-e822fb6cb373]: exited
+[debug] [2019-12-02T15:03:47.276Z] DEBUG: [worker-~diagnostic~-a0fd280d-a75c-4e98-8e19-e822fb6cb373]: FINISHED
+[debug] [2019-12-02T15:03:47.587Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:03:47.920Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js.map changed, reloading triggers
+[debug] [2019-12-02T15:03:47.920Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js changed, reloading triggers
+[debug] [2019-12-02T15:03:48.932Z] DEBUG: [worker-~diagnostic~-1a1915c0-9228-4312-87ce-3dadcab31806]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_14270.sock
+[debug] [2019-12-02T15:03:48.932Z] DEBUG: [worker-~diagnostic~-1a1915c0-9228-4312-87ce-3dadcab31806]: BUSY
+[debug] [2019-12-02T15:03:49.423Z] DEBUG: [runtime-status] [14270] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:03:49.427Z] DEBUG: [runtime-status] [14270] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:03:49.430Z] DEBUG: [runtime-status] [14270] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:03:49.432Z] DEBUG: [runtime-status] [14270] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:03:49.434Z] DEBUG: [runtime-status] [14270] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:03:49.862Z] DEBUG: [worker-~diagnostic~-1a1915c0-9228-4312-87ce-3dadcab31806]: exited
+[debug] [2019-12-02T15:03:49.862Z] DEBUG: [worker-~diagnostic~-1a1915c0-9228-4312-87ce-3dadcab31806]: FINISHED
+[debug] [2019-12-02T15:03:55.722Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:03:56.296Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js.map changed, reloading triggers
+[debug] [2019-12-02T15:03:56.296Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js changed, reloading triggers
+[debug] [2019-12-02T15:03:57.304Z] DEBUG: [worker-~diagnostic~-5849952f-ce2f-4a47-8fcb-0b17f1f331a5]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_14273.sock
+[debug] [2019-12-02T15:03:57.304Z] DEBUG: [worker-~diagnostic~-5849952f-ce2f-4a47-8fcb-0b17f1f331a5]: BUSY
+[debug] [2019-12-02T15:03:57.851Z] DEBUG: [runtime-status] [14273] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:03:57.856Z] DEBUG: [runtime-status] [14273] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:03:57.859Z] DEBUG: [runtime-status] [14273] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:03:57.861Z] DEBUG: [runtime-status] [14273] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:03:57.864Z] DEBUG: [runtime-status] [14273] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:03:58.205Z] DEBUG: [worker-~diagnostic~-5849952f-ce2f-4a47-8fcb-0b17f1f331a5]: exited
+[debug] [2019-12-02T15:03:58.205Z] DEBUG: [worker-~diagnostic~-5849952f-ce2f-4a47-8fcb-0b17f1f331a5]: FINISHED
+[debug] [2019-12-02T15:03:58.713Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:03:59.273Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js.map changed, reloading triggers
+[debug] [2019-12-02T15:03:59.274Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js changed, reloading triggers
+[debug] [2019-12-02T15:04:00.280Z] DEBUG: [worker-~diagnostic~-dd030b23-dd33-49e7-ba27-24c27f8f9aec]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_14275.sock
+[debug] [2019-12-02T15:04:00.281Z] DEBUG: [worker-~diagnostic~-dd030b23-dd33-49e7-ba27-24c27f8f9aec]: BUSY
+[debug] [2019-12-02T15:04:00.698Z] DEBUG: [runtime-status] [14275] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:04:00.700Z] DEBUG: [runtime-status] [14275] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:04:00.704Z] DEBUG: [runtime-status] [14275] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:04:00.704Z] DEBUG: [runtime-status] [14275] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:04:00.706Z] DEBUG: [runtime-status] [14275] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:04:01.081Z] DEBUG: [worker-~diagnostic~-dd030b23-dd33-49e7-ba27-24c27f8f9aec]: exited
+[debug] [2019-12-02T15:04:01.082Z] DEBUG: [worker-~diagnostic~-dd030b23-dd33-49e7-ba27-24c27f8f9aec]: FINISHED
+[debug] [2019-12-02T15:04:01.095Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:04:01.447Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js.map changed, reloading triggers
+[debug] [2019-12-02T15:04:01.447Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js changed, reloading triggers
+[debug] [2019-12-02T15:04:02.457Z] DEBUG: [worker-~diagnostic~-5436af5b-cf5a-4ef0-a3bc-f9eb67643ae2]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_14277.sock
+[debug] [2019-12-02T15:04:02.457Z] DEBUG: [worker-~diagnostic~-5436af5b-cf5a-4ef0-a3bc-f9eb67643ae2]: BUSY
+[debug] [2019-12-02T15:04:03.020Z] DEBUG: [runtime-status] [14277] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:04:03.024Z] DEBUG: [runtime-status] [14277] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:04:03.027Z] DEBUG: [runtime-status] [14277] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:04:03.028Z] DEBUG: [runtime-status] [14277] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:04:03.030Z] DEBUG: [runtime-status] [14277] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:04:03.367Z] DEBUG: [worker-~diagnostic~-5436af5b-cf5a-4ef0-a3bc-f9eb67643ae2]: exited
+[debug] [2019-12-02T15:04:03.367Z] DEBUG: [worker-~diagnostic~-5436af5b-cf5a-4ef0-a3bc-f9eb67643ae2]: FINISHED
+[debug] [2019-12-02T15:04:09.392Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:04:09.767Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js.map changed, reloading triggers
+[debug] [2019-12-02T15:04:09.767Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js changed, reloading triggers
+[debug] [2019-12-02T15:04:10.634Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:04:10.733Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:04:11.055Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js.map changed, reloading triggers
+[debug] [2019-12-02T15:04:11.055Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js changed, reloading triggers
+[debug] [2019-12-02T15:04:11.486Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:04:11.586Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:04:11.715Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:04:11.815Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:04:12.829Z] DEBUG: [worker-~diagnostic~-15fe491a-bc87-4874-a0fd-ddb2b88778ec]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_14279.sock
+[debug] [2019-12-02T15:04:12.830Z] DEBUG: [worker-~diagnostic~-15fe491a-bc87-4874-a0fd-ddb2b88778ec]: BUSY
+[debug] [2019-12-02T15:04:13.552Z] DEBUG: [runtime-status] [14279] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:04:13.556Z] DEBUG: [runtime-status] [14279] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:04:13.559Z] DEBUG: [runtime-status] [14279] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:04:13.561Z] DEBUG: [runtime-status] [14279] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:04:13.563Z] DEBUG: [runtime-status] [14279] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:04:14.232Z] DEBUG: [worker-~diagnostic~-15fe491a-bc87-4874-a0fd-ddb2b88778ec]: exited
+[debug] [2019-12-02T15:04:14.232Z] DEBUG: [worker-~diagnostic~-15fe491a-bc87-4874-a0fd-ddb2b88778ec]: FINISHED
+[debug] [2019-12-02T15:04:16.269Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:04:16.589Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js.map changed, reloading triggers
+[debug] [2019-12-02T15:04:16.590Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js changed, reloading triggers
+[debug] [2019-12-02T15:04:17.270Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:04:17.375Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:04:17.475Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:04:17.575Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:04:18.586Z] DEBUG: [worker-~diagnostic~-0824218c-b490-4149-bc84-4650425411e5]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_14283.sock
+[debug] [2019-12-02T15:04:18.586Z] DEBUG: [worker-~diagnostic~-0824218c-b490-4149-bc84-4650425411e5]: BUSY
+[debug] [2019-12-02T15:04:19.076Z] DEBUG: [runtime-status] [14283] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:04:19.080Z] DEBUG: [runtime-status] [14283] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:04:19.082Z] DEBUG: [runtime-status] [14283] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:04:19.084Z] DEBUG: [runtime-status] [14283] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:04:19.085Z] DEBUG: [runtime-status] [14283] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:04:19.415Z] DEBUG: [worker-~diagnostic~-0824218c-b490-4149-bc84-4650425411e5]: exited
+[debug] [2019-12-02T15:04:19.415Z] DEBUG: [worker-~diagnostic~-0824218c-b490-4149-bc84-4650425411e5]: FINISHED
+[debug] [2019-12-02T15:04:32.629Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/index.ts changed, reloading triggers
+[debug] [2019-12-02T15:04:33.033Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/index.js.map changed, reloading triggers
+[debug] [2019-12-02T15:04:33.034Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/index.js changed, reloading triggers
+[debug] [2019-12-02T15:04:34.042Z] DEBUG: [worker-~diagnostic~-ba2ab3b3-5053-4e69-a001-929de4171f51]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_14290.sock
+[debug] [2019-12-02T15:04:34.042Z] DEBUG: [worker-~diagnostic~-ba2ab3b3-5053-4e69-a001-929de4171f51]: BUSY
+[debug] [2019-12-02T15:04:34.675Z] DEBUG: [runtime-status] [14290] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:04:34.680Z] DEBUG: [runtime-status] [14290] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:04:34.686Z] DEBUG: [runtime-status] [14290] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:04:34.688Z] DEBUG: [runtime-status] [14290] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:04:34.691Z] DEBUG: [runtime-status] [14290] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:04:35.161Z] DEBUG: [worker-~diagnostic~-ba2ab3b3-5053-4e69-a001-929de4171f51]: exited
+[debug] [2019-12-02T15:04:35.161Z] DEBUG: [worker-~diagnostic~-ba2ab3b3-5053-4e69-a001-929de4171f51]: FINISHED
+[debug] [2019-12-02T15:06:28.737Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/index.ts changed, reloading triggers
+[debug] [2019-12-02T15:06:28.738Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/index.js.map changed, reloading triggers
+[debug] [2019-12-02T15:06:28.738Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/index.js changed, reloading triggers
+[debug] [2019-12-02T15:06:29.747Z] DEBUG: [worker-~diagnostic~-75945363-d5f6-45fd-a828-2dc304c4a3fe]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_14386.sock
+[debug] [2019-12-02T15:06:29.747Z] DEBUG: [worker-~diagnostic~-75945363-d5f6-45fd-a828-2dc304c4a3fe]: BUSY
+[debug] [2019-12-02T15:06:30.332Z] DEBUG: [runtime-status] [14386] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:06:30.334Z] DEBUG: [runtime-status] [14386] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:06:30.338Z] DEBUG: [runtime-status] [14386] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:06:30.340Z] DEBUG: [runtime-status] [14386] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:06:30.341Z] DEBUG: [runtime-status] [14386] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:06:30.738Z] DEBUG: [worker-~diagnostic~-75945363-d5f6-45fd-a828-2dc304c4a3fe]: exited
+[debug] [2019-12-02T15:06:30.738Z] DEBUG: [worker-~diagnostic~-75945363-d5f6-45fd-a828-2dc304c4a3fe]: FINISHED
+[debug] [2019-12-02T15:12:52.812Z] shell:pollAOC: trigger={"schedule":{"schedule":"every 1 minute"},"eventTrigger":{"resource":"projects/advent-of-code-slack/topics","eventType":"google.pubsub.topic.publish","service":"pubsub.googleapis.com"},"labels":{"deployment-scheduled":"true"},"name":"pollAOC","entryPoint":"pollAOC"}
+[debug] [2019-12-02T15:12:52.815Z] shell:pollAOC: opts={}, data={}
+[debug] [2019-12-02T15:12:52.838Z] DEBUG: [worker-pollAOC-758b8fb3-e438-43ed-a4bf-e3880106888b]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_14506.sock
+[debug] [2019-12-02T15:12:52.838Z] DEBUG: [worker-pollAOC-758b8fb3-e438-43ed-a4bf-e3880106888b]: BUSY
+[debug] [2019-12-02T15:12:53.278Z] DEBUG: [runtime-status] [14506] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:12:53.282Z] DEBUG: [runtime-status] [14506] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:12:53.285Z] DEBUG: [runtime-status] [14506] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:12:53.286Z] DEBUG: [runtime-status] [14506] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:12:53.287Z] DEBUG: [runtime-status] [14506] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:12:53.570Z] DEBUG: [runtime-status] [14506] Trigger "pollAOC" has been found, beginning invocation!
+[debug] [2019-12-02T15:12:53.574Z] [functions] Beginning execution of "pollAOC"
+[debug] [2019-12-02T15:12:53.575Z] DEBUG: [runtime-status] [14506] triggerDefinition {"schedule":{"schedule":"every 1 minutes"},"eventTrigger":{"resource":"projects/advent-of-code-slack/topics","eventType":"google.pubsub.topic.publish","service":"pubsub.googleapis.com"},"labels":{"deployment-scheduled":"true"},"name":"pollAOC","entryPoint":"pollAOC"}
+[debug] [2019-12-02T15:12:53.576Z] DEBUG: [runtime-status] [14506] Running pollAOC in mode BACKGROUND
+[debug] [2019-12-02T15:12:53.576Z] DEBUG: [runtime-status] [14506] ProcessBackground {"eventId":"ebfba3a1-e189-4736-9887-53983351a790","timestamp":"2019-12-02T15:12:52.816Z","eventType":"google.pubsub.topic.publish","data":{}}
+[debug] [2019-12-02T15:12:53.576Z] DEBUG: [runtime-status] [14506] RunBackground {"data":{},"context":{"eventId":"ebfba3a1-e189-4736-9887-53983351a790","timestamp":"2019-12-02T15:12:52.816Z","eventType":"google.pubsub.topic.publish"}}
+[debug] [2019-12-02T15:12:56.150Z] DEBUG: [runtime-status] [14506] Ephemeral server survived.
+[debug] [2019-12-02T15:12:56.150Z] [functions] Finished "pollAOC" in ~2s
+[debug] [2019-12-02T15:12:56.151Z] DEBUG: [worker-pollAOC-758b8fb3-e438-43ed-a4bf-e3880106888b]: IDLE
+[debug] [2019-12-02T15:18:23.623Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:18:24.397Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js.map changed, reloading triggers
+[debug] [2019-12-02T15:18:24.397Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js changed, reloading triggers
+[debug] [2019-12-02T15:18:25.402Z] DEBUG: [worker-pool]: Shutting down IDLE worker (pollAOC)
+[debug] [2019-12-02T15:18:25.418Z] DEBUG: [worker-~diagnostic~-b1144362-1b6b-445d-95cb-c070650c77d4]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_15028.sock
+[debug] [2019-12-02T15:18:25.418Z] DEBUG: [worker-~diagnostic~-b1144362-1b6b-445d-95cb-c070650c77d4]: BUSY
+[debug] [2019-12-02T15:18:25.421Z] DEBUG: [worker-pollAOC-758b8fb3-e438-43ed-a4bf-e3880106888b]: exited
+[debug] [2019-12-02T15:18:25.421Z] DEBUG: [worker-pollAOC-758b8fb3-e438-43ed-a4bf-e3880106888b]: FINISHED
+[debug] [2019-12-02T15:18:25.920Z] DEBUG: [runtime-status] [15028] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:18:25.925Z] DEBUG: [runtime-status] [15028] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:18:25.930Z] DEBUG: [runtime-status] [15028] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:18:25.933Z] DEBUG: [runtime-status] [15028] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:18:25.934Z] DEBUG: [runtime-status] [15028] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js:12
+        headers: { "content-type:}: 
+                   ^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:617:28)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/Users/tdawes/prodo/git/aoc-sync/functions/build/index.js:5:24)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[debug] [2019-12-02T15:18:26.379Z] DEBUG: [worker-~diagnostic~-b1144362-1b6b-445d-95cb-c070650c77d4]: exited
+[debug] [2019-12-02T15:18:26.379Z] DEBUG: [worker-~diagnostic~-b1144362-1b6b-445d-95cb-c070650c77d4]: FINISHED
+[debug] [2019-12-02T15:18:29.803Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:18:29.903Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:18:30.220Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js.map changed, reloading triggers
+[debug] [2019-12-02T15:18:30.221Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js changed, reloading triggers
+[debug] [2019-12-02T15:18:31.226Z] DEBUG: [worker-~diagnostic~-f616ac1d-ab7b-46ee-9cac-71af25fd355a]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_15030.sock
+[debug] [2019-12-02T15:18:31.226Z] DEBUG: [worker-~diagnostic~-f616ac1d-ab7b-46ee-9cac-71af25fd355a]: BUSY
+[debug] [2019-12-02T15:18:31.760Z] DEBUG: [runtime-status] [15030] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:18:31.765Z] DEBUG: [runtime-status] [15030] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:18:31.768Z] DEBUG: [runtime-status] [15030] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:18:31.769Z] DEBUG: [runtime-status] [15030] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:18:31.770Z] DEBUG: [runtime-status] [15030] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:18:32.176Z] DEBUG: [worker-~diagnostic~-f616ac1d-ab7b-46ee-9cac-71af25fd355a]: exited
+[debug] [2019-12-02T15:18:32.177Z] DEBUG: [worker-~diagnostic~-f616ac1d-ab7b-46ee-9cac-71af25fd355a]: FINISHED
+[debug] [2019-12-02T15:18:34.668Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:18:35.012Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js.map changed, reloading triggers
+[debug] [2019-12-02T15:18:35.013Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js changed, reloading triggers
+[debug] [2019-12-02T15:18:36.028Z] DEBUG: [worker-~diagnostic~-735aa910-2f4e-4dc6-9ad0-ef480f808c97]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_15034.sock
+[debug] [2019-12-02T15:18:36.028Z] DEBUG: [worker-~diagnostic~-735aa910-2f4e-4dc6-9ad0-ef480f808c97]: BUSY
+[debug] [2019-12-02T15:18:36.569Z] DEBUG: [runtime-status] [15034] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:18:36.576Z] DEBUG: [runtime-status] [15034] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:18:36.577Z] DEBUG: [runtime-status] [15034] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:18:36.579Z] DEBUG: [runtime-status] [15034] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:18:36.581Z] DEBUG: [runtime-status] [15034] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:18:36.989Z] DEBUG: [worker-~diagnostic~-735aa910-2f4e-4dc6-9ad0-ef480f808c97]: exited
+[debug] [2019-12-02T15:18:36.990Z] DEBUG: [worker-~diagnostic~-735aa910-2f4e-4dc6-9ad0-ef480f808c97]: FINISHED
+[debug] [2019-12-02T15:18:37.077Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:18:37.411Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js.map changed, reloading triggers
+[debug] [2019-12-02T15:18:37.412Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js changed, reloading triggers
+[debug] [2019-12-02T15:18:38.418Z] DEBUG: [worker-~diagnostic~-3c161716-08f5-481f-966b-d38d383167bf]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_15035.sock
+[debug] [2019-12-02T15:18:38.419Z] DEBUG: [worker-~diagnostic~-3c161716-08f5-481f-966b-d38d383167bf]: BUSY
+[debug] [2019-12-02T15:18:39.009Z] DEBUG: [runtime-status] [15035] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:18:39.015Z] DEBUG: [runtime-status] [15035] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:18:39.019Z] DEBUG: [runtime-status] [15035] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:18:39.021Z] DEBUG: [runtime-status] [15035] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:18:39.023Z] DEBUG: [runtime-status] [15035] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:18:39.429Z] DEBUG: [worker-~diagnostic~-3c161716-08f5-481f-966b-d38d383167bf]: exited
+[debug] [2019-12-02T15:18:39.429Z] DEBUG: [worker-~diagnostic~-3c161716-08f5-481f-966b-d38d383167bf]: FINISHED
+[debug] [2019-12-02T15:18:39.857Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:18:39.957Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:18:40.527Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js.map changed, reloading triggers
+[debug] [2019-12-02T15:18:40.527Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js changed, reloading triggers
+[debug] [2019-12-02T15:18:41.536Z] DEBUG: [worker-~diagnostic~-575ba22f-f279-4951-b91a-8810c65c6b8d]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_15038.sock
+[debug] [2019-12-02T15:18:41.536Z] DEBUG: [worker-~diagnostic~-575ba22f-f279-4951-b91a-8810c65c6b8d]: BUSY
+[debug] [2019-12-02T15:18:41.537Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:18:42.046Z] DEBUG: [runtime-status] [15038] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:18:42.051Z] DEBUG: [runtime-status] [15038] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:18:42.054Z] DEBUG: [runtime-status] [15038] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:18:42.056Z] DEBUG: [runtime-status] [15038] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:18:42.057Z] DEBUG: [runtime-status] [15038] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:18:42.066Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js.map changed, reloading triggers
+[debug] [2019-12-02T15:18:42.066Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js changed, reloading triggers
+[debug] [2019-12-02T15:18:42.425Z] DEBUG: [worker-~diagnostic~-575ba22f-f279-4951-b91a-8810c65c6b8d]: exited
+[debug] [2019-12-02T15:18:42.425Z] DEBUG: [worker-~diagnostic~-575ba22f-f279-4951-b91a-8810c65c6b8d]: FINISHED
+[debug] [2019-12-02T15:18:43.072Z] DEBUG: [worker-~diagnostic~-e365b249-73ba-4a6c-a7dc-9d4c475bc9bc]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_15039.sock
+[debug] [2019-12-02T15:18:43.072Z] DEBUG: [worker-~diagnostic~-e365b249-73ba-4a6c-a7dc-9d4c475bc9bc]: BUSY
+[debug] [2019-12-02T15:18:43.557Z] DEBUG: [runtime-status] [15039] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:18:43.561Z] DEBUG: [runtime-status] [15039] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:18:43.564Z] DEBUG: [runtime-status] [15039] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:18:43.566Z] DEBUG: [runtime-status] [15039] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:18:43.568Z] DEBUG: [runtime-status] [15039] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:18:43.931Z] DEBUG: [worker-~diagnostic~-e365b249-73ba-4a6c-a7dc-9d4c475bc9bc]: exited
+[debug] [2019-12-02T15:18:43.931Z] DEBUG: [worker-~diagnostic~-e365b249-73ba-4a6c-a7dc-9d4c475bc9bc]: FINISHED
+[debug] [2019-12-02T15:18:44.682Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:18:45.692Z] DEBUG: [worker-~diagnostic~-426c38e1-a901-4ceb-b0b0-76e879291f4a]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_15043.sock
+[debug] [2019-12-02T15:18:45.693Z] DEBUG: [worker-~diagnostic~-426c38e1-a901-4ceb-b0b0-76e879291f4a]: BUSY
+[debug] [2019-12-02T15:18:46.221Z] DEBUG: [runtime-status] [15043] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:18:46.224Z] DEBUG: [runtime-status] [15043] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:18:46.227Z] DEBUG: [runtime-status] [15043] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:18:46.229Z] DEBUG: [runtime-status] [15043] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:18:46.230Z] DEBUG: [runtime-status] [15043] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:18:46.573Z] DEBUG: [worker-~diagnostic~-426c38e1-a901-4ceb-b0b0-76e879291f4a]: exited
+[debug] [2019-12-02T15:18:46.573Z] DEBUG: [worker-~diagnostic~-426c38e1-a901-4ceb-b0b0-76e879291f4a]: FINISHED
+[debug] [2019-12-02T15:18:57.476Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:18:57.816Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js.map changed, reloading triggers
+[debug] [2019-12-02T15:18:57.817Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js changed, reloading triggers
+[debug] [2019-12-02T15:18:58.824Z] DEBUG: [worker-~diagnostic~-9a8127b8-29a3-40e0-a854-5c71176e1a20]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_15046.sock
+[debug] [2019-12-02T15:18:58.824Z] DEBUG: [worker-~diagnostic~-9a8127b8-29a3-40e0-a854-5c71176e1a20]: BUSY
+[debug] [2019-12-02T15:18:59.339Z] DEBUG: [runtime-status] [15046] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:18:59.343Z] DEBUG: [runtime-status] [15046] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:18:59.346Z] DEBUG: [runtime-status] [15046] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:18:59.348Z] DEBUG: [runtime-status] [15046] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:18:59.349Z] DEBUG: [runtime-status] [15046] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:18:59.782Z] DEBUG: [worker-~diagnostic~-9a8127b8-29a3-40e0-a854-5c71176e1a20]: exited
+[debug] [2019-12-02T15:18:59.782Z] DEBUG: [worker-~diagnostic~-9a8127b8-29a3-40e0-a854-5c71176e1a20]: FINISHED
+[debug] [2019-12-02T15:18:59.921Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:19:00.309Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js.map changed, reloading triggers
+[debug] [2019-12-02T15:19:00.309Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js changed, reloading triggers
+[debug] [2019-12-02T15:19:01.318Z] DEBUG: [worker-~diagnostic~-f8cb8a03-86e5-4cb0-ab71-1af434299192]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_15047.sock
+[debug] [2019-12-02T15:19:01.319Z] DEBUG: [worker-~diagnostic~-f8cb8a03-86e5-4cb0-ab71-1af434299192]: BUSY
+[debug] [2019-12-02T15:19:02.083Z] DEBUG: [runtime-status] [15047] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:19:02.087Z] DEBUG: [runtime-status] [15047] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:19:02.091Z] DEBUG: [runtime-status] [15047] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:19:02.092Z] DEBUG: [runtime-status] [15047] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:19:02.094Z] DEBUG: [runtime-status] [15047] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:19:02.510Z] DEBUG: [worker-~diagnostic~-f8cb8a03-86e5-4cb0-ab71-1af434299192]: exited
+[debug] [2019-12-02T15:19:02.510Z] DEBUG: [worker-~diagnostic~-f8cb8a03-86e5-4cb0-ab71-1af434299192]: FINISHED
+[debug] [2019-12-02T15:19:04.555Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:19:04.895Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js.map changed, reloading triggers
+[debug] [2019-12-02T15:19:04.896Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/build/functions/update-slack.js changed, reloading triggers
+[debug] [2019-12-02T15:19:05.903Z] DEBUG: [worker-~diagnostic~-1d1a2986-32b7-4a2c-8ec7-ede630d5d44a]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_15051.sock
+[debug] [2019-12-02T15:19:05.904Z] DEBUG: [worker-~diagnostic~-1d1a2986-32b7-4a2c-8ec7-ede630d5d44a]: BUSY
+[debug] [2019-12-02T15:19:05.986Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:19:06.077Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:19:06.177Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:19:06.538Z] DEBUG: [runtime-status] [15051] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:19:06.543Z] DEBUG: [runtime-status] [15051] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:19:06.547Z] DEBUG: [runtime-status] [15051] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:19:06.548Z] DEBUG: [runtime-status] [15051] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:19:06.550Z] DEBUG: [runtime-status] [15051] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:19:06.557Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:19:06.943Z] DEBUG: [worker-~diagnostic~-1d1a2986-32b7-4a2c-8ec7-ede630d5d44a]: exited
+[debug] [2019-12-02T15:19:06.943Z] DEBUG: [worker-~diagnostic~-1d1a2986-32b7-4a2c-8ec7-ede630d5d44a]: FINISHED
+[debug] [2019-12-02T15:19:07.573Z] DEBUG: [worker-~diagnostic~-be864126-e927-4e91-b223-7bc01e7c04c4]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_15052.sock
+[debug] [2019-12-02T15:19:07.573Z] DEBUG: [worker-~diagnostic~-be864126-e927-4e91-b223-7bc01e7c04c4]: BUSY
+[debug] [2019-12-02T15:19:08.121Z] DEBUG: [runtime-status] [15052] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:19:08.125Z] DEBUG: [runtime-status] [15052] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:19:08.128Z] DEBUG: [runtime-status] [15052] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:19:08.130Z] DEBUG: [runtime-status] [15052] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:19:08.131Z] DEBUG: [runtime-status] [15052] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:19:08.456Z] DEBUG: [worker-~diagnostic~-be864126-e927-4e91-b223-7bc01e7c04c4]: exited
+[debug] [2019-12-02T15:19:08.456Z] DEBUG: [worker-~diagnostic~-be864126-e927-4e91-b223-7bc01e7c04c4]: FINISHED
+[debug] [2019-12-02T15:19:08.524Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:19:08.624Z] DEBUG: File /Users/tdawes/prodo/git/aoc-sync/functions/src/functions/update-slack.ts changed, reloading triggers
+[debug] [2019-12-02T15:19:09.632Z] DEBUG: [worker-~diagnostic~-0f52fae3-c122-47bb-b210-a5f544ed954e]: Assigning socketPath: /var/folders/_4/7636v80d10zdj6vhbd_4193c0000gn/T/fire_emu_15054.sock
+[debug] [2019-12-02T15:19:09.633Z] DEBUG: [worker-~diagnostic~-0f52fae3-c122-47bb-b210-a5f544ed954e]: BUSY
+[debug] [2019-12-02T15:19:10.121Z] DEBUG: [runtime-status] [15054] Functions runtime initialized. {"cwd":"/Users/tdawes/prodo/git/aoc-sync/functions","node_version":"8.16.2"}
+[debug] [2019-12-02T15:19:10.125Z] DEBUG: [runtime-status] [15054] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-02T15:19:10.128Z] DEBUG: [runtime-status] [15054] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.8.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-02T15:19:10.133Z] DEBUG: [runtime-status] [15054] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:19:10.133Z] DEBUG: [runtime-status] [15054] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/tdawes/prodo/git/aoc-sync/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-02T15:19:10.509Z] DEBUG: [worker-~diagnostic~-0f52fae3-c122-47bb-b210-a5f544ed954e]: exited
+[debug] [2019-12-02T15:19:10.509Z] DEBUG: [worker-~diagnostic~-0f52fae3-c122-47bb-b210-a5f544ed954e]: FINISHED
