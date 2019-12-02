@@ -7,7 +7,7 @@ const challengeUnlocked = async (day: string) => {
   await fetch(config.webhook, {
     method: "POST",
     body: JSON.stringify({
-      text: `Day ${day} has just been unlocked!`,
+      text: `Ho Ho Ho! Day ${day} has just been unlocked! https://adventofcode.com/2019/day/${day}`,
     }),
     headers: { "content-type": "application/json" },
   });
