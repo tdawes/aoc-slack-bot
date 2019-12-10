@@ -62,7 +62,7 @@ export const pollAOCFunction = async () => {
     const name = $(el)
       .find(".privboard-name")
       .text()
-      .replace(/^\s+(Sponsor)$/g, "");
+      .replace(/\s+\((?:Sponsor|AoC\+\+)\)$/g, "");
 
     $(el)
       .find(
