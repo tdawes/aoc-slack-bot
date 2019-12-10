@@ -77,7 +77,7 @@ export const pollAOCFunction = async () => {
         } else if ($(entry).hasClass("privboard-star-firstonly")) {
           results[day].unlocked = true;
           results[day]["1"][name] = true;
-          results[day]["1"][name] = false;
+          results[day]["2"][name] = false;
         } else {
           results[day].unlocked = true;
           results[day]["1"][name] = false;
